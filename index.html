@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NULL — Coming Soon</title>
+
   <style>
     :root {
       --bg: #000;
@@ -11,7 +12,9 @@
       --muted: rgba(255,255,255,.7);
       --muted2: rgba(255,255,255,.55);
     }
+
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       min-height: 100vh;
@@ -21,29 +24,34 @@
       display: grid;
       place-items: center;
     }
+
     .wrap {
       width: min(980px, 92vw);
       text-align: center;
       padding: 48px 0;
     }
+
     .top {
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      gap: 12px;
+      justify-content: center;
+      gap: 14px;
       margin-bottom: 36px;
     }
-    .mark {
-      width: 34px; height: 22px;
-      border: 2px solid var(--fg);
-      border-radius: 2px;
-      opacity: .95;
+
+    .logo {
+      width: 42px;
+      height: auto;
+      display: block;
     }
+
     .brand {
       font-weight: 700;
       letter-spacing: .08em;
       text-transform: uppercase;
       font-size: 18px;
     }
+
     .tagline {
       margin: 0 auto 34px;
       max-width: 720px;
@@ -52,7 +60,12 @@
       color: var(--muted);
       letter-spacing: .02em;
     }
-    .tagline strong { color: var(--fg); font-weight: 700; }
+
+    .tagline strong {
+      color: var(--fg);
+      font-weight: 700;
+    }
+
     h1 {
       margin: 0;
       font-size: clamp(44px, 7vw, 78px);
@@ -60,6 +73,7 @@
       text-transform: uppercase;
       font-weight: 500;
     }
+
     .sub {
       margin-top: 18px;
       font-size: 14px;
@@ -68,17 +82,14 @@
       color: var(--muted2);
     }
   </style>
-  .logo {
-  width: 42px;
-  height: auto;
-  display: block;
-}
 </head>
+
 <body>
   <main class="wrap">
     <div class="top">
-  <img src="logo-null.png" alt="NULL logo" class="logo">
-</div>
+      <img src="logo-null.png" alt="NULL logo" class="logo" />
+      <div class="brand">NULL</div>
+    </div>
 
     <p class="tagline">
       <strong>NULL</strong> is an empty space. No roadmap. No promised utility.<br/>
@@ -86,7 +97,7 @@
     </p>
 
     <h1>COMING SOON</h1>
-    <div class="sub">Stay tuned</div>
+    <div class="sub">STAY TUNED</div>
   </main>
 </body>
 </html>
