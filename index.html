@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NULL — Coming Soon</title>
+  <style>
+    :root {
+      --bg: #000;
+      --fg: #fff;
+      --muted: rgba(255,255,255,.7);
+      --muted2: rgba(255,255,255,.55);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      display: grid;
+      place-items: center;
+    }
+    .wrap {
+      width: min(980px, 92vw);
+      text-align: center;
+      padding: 48px 0;
+    }
+    .top {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+    .mark {
+      width: 34px; height: 22px;
+      border: 2px solid var(--fg);
+      border-radius: 2px;
+      opacity: .95;
+    }
+    .brand {
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    .tagline {
+      margin: 0 auto 34px;
+      max-width: 720px;
+      font-size: 18px;
+      line-height: 1.55;
+      color: var(--muted);
+      letter-spacing: .02em;
+    }
+    .tagline strong { color: var(--fg); font-weight: 700; }
+    h1 {
+      margin: 0;
+      font-size: clamp(44px, 7vw, 78px);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .sub {
+      margin-top: 18px;
+      font-size: 14px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted2);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="top">
+      <div class="mark"></div>
+      <div class="brand">NULL</div>
+    </div>
+
+    <p class="tagline">
+      <strong>NULL</strong> is an empty space. No roadmap. No promised utility.<br/>
+      Only ideas.
+    </p>
+
+    <h1>COMING SOON</h1>
+    <div class="sub">Stay tuned</div>
+  </main>
+</body>
+</html>
